@@ -1,0 +1,33 @@
+//REST API > Petitions HTTP
+
+
+
+// Getting All Videos?
+GET http://localhost:5000/videos
+
+### Getting a Video
+
+GET http://localhost:5000/videos/648b04b62dd568d3e4e74bc
+
+### Creating a Video
+POST http://localhost:5000/videos/
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=VzqFv3LnOmM&ab_channel=canicas4",
+    "title": "Fazt Video",
+    "description": "This is a Fazt video"
+}
+
+### Deleting a Video
+
+DELETE http://localhost:5000/videos/648b0ba1a104391655e0403d
+
+### Updating a Video
+PUT http://localhost:5000/videos/648b11b63518d3185dabaa18
+Content-Type: application/json
+
+{
+    "title": "Docker curso práctico",
+    "description": "hola"
+}
